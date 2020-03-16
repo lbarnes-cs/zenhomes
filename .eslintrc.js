@@ -14,5 +14,21 @@ module.exports = {
         "jest/no-identical-title": "error",
         "jest/prefer-to-have-length": "warn",
         "jest/valid-expect": "error",
+        "import/no-named-as-default": "off",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                js: "never",
+                jsx: "never",
+            },
+        ],
+    },
+    settings: { "import/extensions": [".js", ".jsx"] },
+    parser: "vue-eslint-parser",
+    parserOptions: {
+        parser: "babel-eslint",
+        ecmaVersion: 8,
+        sourceType: "module",
     },
 };
